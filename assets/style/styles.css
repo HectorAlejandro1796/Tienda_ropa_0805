@@ -1,8 +1,24 @@
 body{
 background-color: lightgray;
 }
+ main{
+display: flex;
+flex-direction: row-reverse;
+justify-content: start;
+}
+#products {
+border: solid forestgreen 2px;
+width: 80%;
+}
 
-#products{
+#about{
+border: blue solid 2px;
+width: 20%;
+}
+
+
+
+#products > div {
 display:flex;
 gap: 30px;
 flex-wrap: wrap;
@@ -10,8 +26,41 @@ padding: 50px;
 justify-content: space-evenly;
 }
 
-#products > article{
-width: 45%;
+#products >div > article{
+width: 40%;
 height: 200px;
 border: solid red 1px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+padding: 5px;
+}
+
+section{
+text-align: center;
+}
+
+.card-img{
+
+border: 1px solid black;
+background: #393939;
+width: 80%;
+height: 80%;
+}
+
+.card-content{
+display: flex;
+gap: 5px;
+width: 80%;
+justify-content: space-between;
+}
+
+.btn{
+background: #009933;
+color: white;
+border: black solid 1px;
+border-radius: 5px;
+padding: 5px;
 }
